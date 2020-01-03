@@ -2,162 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="390ece3e-b438-4c00-9e2b-4718f75fb571" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/contrato/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_banco.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_cliente.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_contrato.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_cuenta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_grupo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_moneda.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_notaria.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_persona.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_propietaria.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_referenciacelular.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/form/forms_urbanizacion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/migrations/0002_auto_20190924_1420.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/migrations/0003_auto_20190924_1445.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/migrations/0004_auto_20190924_2129.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_banco.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_cliente.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_contrato.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_cuenta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_grupo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_moneda.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_notaria.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_persona.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_propietaria.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_referenciacelular.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/contrato/view/views_urbanizacion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/form/forms_distrito.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/form/forms_lote.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/form/forms_manzano.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/form/forms_medida.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/form/forms_ubicacion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/migrations/0002_auto_20190926_0024.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/view/views_distrito.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/view/views_lote.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/view/views_manzano.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/view/views_medida.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/terreno/view/views_ubicacion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/api/api_usuario.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/api/serializers_usuario.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/api_urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/form/forms_perfil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/form/forms_usuario.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/templatetags/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/view/views_perfil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/usuario/view/views_usuario.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/navbar-nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/notificacion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/static/base_dasboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/topbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/detalle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/eliminar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/estado_activar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/estado_desactivar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/include/banco_listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/include/filtros_banco.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cliente/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cliente/include/cliente.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cliente/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/contrato/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/contrato/include/contrato.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/contrato/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/contrato/reporte.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cuenta/detalle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cuenta/eliminar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cuenta/estado_activar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cuenta/estado_desactivar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cuenta/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cuenta/include/cuenta_listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cuenta/include/filtros_cuenta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cuenta/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/grupo/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/grupo/include/grupo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/grupo/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/detalle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/eliminar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/estado_activar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/estado_desactivar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/include/filtros_moneda.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/include/moneda_listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/mensaje.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/movil/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/movil/include/referencia_celular.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/movil/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/notario/include/notario.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/notario/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/persona/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/persona/include/persona.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/persona/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/propietario/include/propietario.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/propietario/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/urbanizacion/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/urbanizacion/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/distrito/include/distrito.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/distrito/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/lote/include/lote.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/lote/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/manzano/include/manzano.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/manzano/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/medida/detalle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/medida/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/medida/include/medida.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/medida/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/ubicacion/include/ubicacion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/ubicacion/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/configuracion/perfil_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/configuracion/perfil_password.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/configuracion/perfil_usuario.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/perfil/detalle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/perfil/eliminar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/perfil/estado_activar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/perfil/estado_desactivar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/perfil/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/perfil/listar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/usuario/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/usuario/include/usuario.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/usuario/listar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/proyectosigetebr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/proyectosigetebr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyectosigetebr/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyectosigetebr/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/proyectosigetebr/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyectosigetebr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/proyectosigetebr/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +82,7 @@
       <updated>1577995830873</updated>
       <workItem from="1577995916007" duration="414000" />
       <workItem from="1578015399650" duration="2278000" />
-      <workItem from="1578018173499" duration="759000" />
+      <workItem from="1578018173499" duration="1033000" />
     </task>
     <servers />
   </component>
@@ -245,6 +90,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="642" y="0" key="CommitChangelistDialog2" timestamp="1578019300258">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="642" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578019300258" />
     <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1578015769822">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

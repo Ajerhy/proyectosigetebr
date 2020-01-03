@@ -1,7 +1,7 @@
-#SISTEMA DE GESTION DE TERRENOS BRUNO RACUA
+# SISTEMA DE GESTION DE TERRENOS BRUNO RACUA
 ![Sistema de Gestion de Terrenos Bruno Racua](logo.png)
 
-#Sigetebr
+# Sigetebr
 ==========
 **SISTEMA WEB**
 
