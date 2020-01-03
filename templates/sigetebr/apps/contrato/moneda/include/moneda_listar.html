@@ -1,0 +1,62 @@
+{% for monedas in list_moneda %}
+    <tr class="h6">
+        <td>{{ forloop.counter}}</td>
+        <td>{{ monedas.nombremoneda }}</td>
+        <td>{{ monedas.siglamoneda}}</td>
+
+        <td class="text-center">
+            {% if monedas.estado %}
+                <span class="right badge badge-success">Activo</span>
+            {% else %}
+                <span class="right badge badge-danger">Inactivo</span>
+            {% endif %}
+        </td>
+
+        <td class="text-center">
+            <div class="btn-group btn-group-xs">
+                <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" title="Opciones" aria-expanded="false">
+                    Opciones
+                    <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li>
+                        <a href="" onclick="return abrir_modal('{% url 'contrato:detalle_moneda' monedas.id %}')" data-toggle="tooltip" data-placement="left" title="Ver Información"><i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i> Ver</a>
+                    </li>
+
+                    <li>
+                        <a href="#" onclick="return abrir_modal('{% url 'contrato:editar_moneda' monedas.id %}')" data-toggle="tooltip" data-placement="left" title="Editar"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+                        <!--a onclick="window.location.href='{% url 'contrato:editar_moneda' monedas.id %}'" role="button" data-toggle="tooltip" data-placement="left" title="Editar"><i class="glyphicon glyphicon-edit"></i> Editar</a-->
+                    </li>
+
+
+                    <li>
+                        <a role="button" {% if monedas.estado %} onclick="return confirm('¿Estás seguro de que deseas desactivar este Moneda?')"
+                        {% else %} onclick="return confirm('¿Estás seguro de que quieres activar a este Moneda?')"
+                        {% endif %}
+                           href="{% url 'contrato:estado_moneda' pk=monedas.id %}" class="on_off" style="color: #454545; text-decoration: none;">
+                            {% if monedas.estado == True %}
+                                <i class="fa fa-toggle-off"></i> Desactivar
+                            {% else %}
+                                <i class="fa fa-toggle-on"></i> Activa
+                            {% endif %}
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="#" onclick="return abrir_modal('{% url 'contrato:eliminar_moneda' monedas.id %}')" data-toggle="tooltip" data-placement="left" title="Eliminar"><i class="glyphicon glyphicon-trash"></i> Eliminar</a>
+                    </li>
+
+                    <li>
+                        {%  if monedas.estado %}
+                            <a href="#" onclick="return abrir_modal('{% url 'contrato:desactivar_moneda' monedas.id %}')" data-toggle="tooltip" data-placement="left" title="Desactivar"><i class="glyphicon glyphicon-eye-close"></i> Desactivar</a>
+                        {% else %}
+                            <a href="#" onclick="return abrir_modal('{% url 'contrato:activar_moneda' monedas.id %}')" data-toggle="tooltip" data-placement="left" title="Activar"><i class="glyphicon glyphicon-eye-open"></i> Activar</a>
+                        {% endif %}
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+{% endfor %}

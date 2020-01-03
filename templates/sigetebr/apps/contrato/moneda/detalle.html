@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close no-print" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="modalTitle">Detalle Moneda</h4>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-12 invoice-col">
+                        <b>Fecha</b> {{ obj.creacion }}<br><br>
+
+                        <b>Moneda</b> {{ obj.nombremoneda }}<br>
+                        <b>Sigla</b> {{ obj.siglamoneda }}<br>
+
+                        <b>Estado</b>
+                        {% if obj.estado == True %}
+                            <span class="label label-success">Activo</span>
+                        {% else %}
+                            <span class="label label-danger">Inactivo</span>
+                        {% endif %}
+                        <br>
+                    </div>
+	      			<div class="clearfix"></div>
+                    <br>
+                    <div class="col-sm-12">
+                        <p><b>Detalle</b></p>
+                        {% if obj.detallemoneda == None %}
+                            <p>Sin Detalle</p>
+                        {% else %}
+                            <p>{{ obj.detallemoneda }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary no-print" aria-label="Print" onclick="$(this).closest('div.modal').printThis();">
+                <i class="fa fa-print"></i>Impresión</button>
+            <button type="button" class="btn btn-default no-print" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+</div>

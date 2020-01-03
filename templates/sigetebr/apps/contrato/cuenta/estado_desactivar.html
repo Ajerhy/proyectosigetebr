@@ -1,0 +1,26 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form method="POST" role="form" action="{% url 'cooperativa:desactivar_cuenta' obj.id %}">
+
+            {% csrf_token %}
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="myModalLabel">
+                    ¿Desactivar Estado Cuenta <mark> {{ obj.numerocuenta }} </mark>?
+                </h5>
+            </div>
+
+            <div class="modal-body">
+                <div class="text-xs font-weight-bold text-uppercase">¿Cambiar {{ obj.numerocuenta }},<br>{{ obj.banco }} ?</div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="return cerrar_modal()" data-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-danger"><i class="glyphicon glyphicon-eye-close"></i> Si, Desactivar</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>

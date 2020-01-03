@@ -1,0 +1,78 @@
+{% for medidas in list_medida %}
+    <tr class="h-6">
+        <td>{{ forloop.counter}}</td>
+        <td>{{ medidas.largomedida }}</td>
+        <td>{{ medidas.anchomedida }}</td>
+        <td>{{ medidas.superficietotal|default_if_none:"" }}</td>
+
+        <td class="text-center">
+            {% if medidas.estado %}
+                <span class="right badge badge-success">Activo</span>
+            {% else %}
+                <span class="right badge badge-danger">Inactivo</span>
+            {% endif %}
+        </td>
+
+        <td class="text-center">
+            <div class="btn-group btn-group-xs">
+                <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" title="Opciones" aria-expanded="false">
+                    Opciones
+                    <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-th-list fa-fw mr-2 text-gray-400"></i>
+                            Ver
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item" href="{% url 'terreno:editar_medida' medidas.id %}">
+                            <i class="fas fa-edit fa-fw mr-2 text-gray-400"></i>
+                            Editar
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a class="dropdown-item" href="{% url 'terreno:eliminar_medida' medidas.id %}">
+                            <i class="fas fa-trash-alt fa-fw mr-2 text-gray-400"></i>
+                            Eliminar
+                        </a>
+                    </li>
+
+
+                    <li>
+                        {%  if medidas.estado %}
+                            <a class="dropdown-item" href="" onclick="return abrir_modal('{% url 'terreno:editar_medida' medidas.id %}')" data-toggle="tooltip" data-placement="left" title="Desactivar">
+                                <i class="fas fa-eye-slash fa-fw mr-2 text-gray-400"></i>
+                                Desactivar</a>
+                        {% else %}
+                            <a class="dropdown-item" href="" onclick="return abrir_modal('{% url 'terreno:editar_medida' medidas.id %}')" data-toggle="tooltip" data-placement="left" title="Activar"><i class="fas fa-eye fa-fw mr-2 text-gray-400"></i> Activar</a>
+                        {% endif %}
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item" {% if medidas.estado %} onclick="return confirm('¿Estás seguro de que deseas desactivar este Medida?')"
+                        {% else %} onclick="return confirm('¿Estás seguro de que quieres activar a este Medida?')"
+                        {% endif %}
+                           href="{% url 'terreno:estado_medida' pk=medidas.id %}" class="on_off" style="color: #454545; text-decoration: none;">
+                            {% if medidas.estado %}
+                                <i class="fas fa-toggle-off fa-fw mr-2 text-gray-400"></i>
+                                Desactivar
+                            {% else %}
+                                <i class="fas fa-toggle-on fa-fw mr-2 text-gray-400"></i>
+                                Activa
+                            {% endif %}
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </td>
+
+    </tr>
+{% endfor %}

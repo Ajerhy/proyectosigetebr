@@ -1,0 +1,26 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <form method="POST" role="form" action="{% url 'cooperativa:activar_banco' obj.id %}">
+
+            {% csrf_token %}
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h5 class="modal-title" id="myModalLabel">
+                    ¿Activar de Estado Banco <mark> {{ obj.nombrebanco }} </mark>?
+                </h5>
+            </div>
+
+            <div class="modal-body">
+                <div class="text-xs font-weight-bold text-uppercase">¿Cambiar {{ obj.nombrebanco }},<br>{{ obj.siglabanco }} ?</div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="return cerrar_modal()" data-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-info"><i class="glyphicon glyphicon-eye-open"></i> Si, Activar</button>
+            </div>
+
+        </form>
+
+    </div>
+</div>

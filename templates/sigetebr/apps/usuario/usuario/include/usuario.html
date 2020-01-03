@@ -1,0 +1,68 @@
+{% for usuario in list_usuario %}
+    <tr class="h6">
+        <td> {{ forloop.counter}} </td>
+
+        <td>{{ usuario.usuario }}</td>
+
+        <td>
+            {{ usuario.perfil.nombre|default_if_none:"" }} {{ usuario.perfil.apellido|default_if_none:"" }}
+        </td>
+
+        <td>{{ usuario.email }}</td>
+
+        {% if usuario.is_active == True %}
+        <td class="text-center">
+            <span class="right badge badge-success">Activo</span>
+        </td>
+        {% else %}
+            <td class="text-center">
+                <span class="right badge badge-danger">Inactivo</span>
+            </td>
+        {% endif %}
+
+        <td class="text-center">
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-expanded="false">
+                    Opciones
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu" role="menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(68px, 38px, 0px);">
+
+                    <a class="dropdown-item" href="#">Action</a>
+
+
+
+                {% if request.user.usuario == usuario.usuario %}
+
+                {% else %}
+                    <a role="button" class="dropdown-item" {% if usuario.is_active %} onclick="return confirm('¿Estás seguro de que deseas desactivar este Usuario?')"
+                        {% else %} onclick="return confirm('¿Estás seguro de que quieres activar a este Usuario?')"
+                        {% endif %}
+                           href="{% url 'usuario:estado_usuario' pk=usuario.id %}" class="on_off" style="color: #454545; text-decoration: none;">
+                            {% if usuario.is_active == True %}
+                                <i class="fa fa-toggle-off"></i> Desactivar
+                            {% else %}
+                                <i class="fa fa-toggle-on"></i> Activa
+                            {% endif %}
+                    </a>
+
+                    {%  if usuario.is_active %}
+                        <a class="dropdown-item" onclick="return abrir_modal('{% url 'usuario:desactivar_usuario' usuario.id %}')" data-toggle="tooltip" data-placement="left" title="Desactivar"><i class="glyphicon glyphicon-eye-close"></i> Desactivar</a>
+                    {% else %}
+                        <a class="dropdown-item" onclick="return abrir_modal('{% url 'usuario:activar_usuario' usuario.id %}')" data-toggle="tooltip" data-placement="left" title="Activar"><i class="glyphicon glyphicon-eye-open"></i> Activar</a>
+                    {% endif %}
+                {% endif %}
+
+
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </div>
+
+        </td>
+    </tr>
+{% endfor %}

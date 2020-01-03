@@ -1,0 +1,30 @@
+{% for lotes in list_lote %}
+    <tr class="h-6">
+        <td>{{ forloop.counter}}</td>
+        <td>{{ lotes.codigolote }}</td>
+        <td>{{ lotes.numerolote }}</td>
+        <td>{{ lotes.siglalote|default_if_none:"" }}</td>
+        <td>{{ lotes.Medida|default_if_none:"" }}</td>
+        <td class="text-center">
+            {% if lotes.estado %}
+                <span class="right badge badge-success">Activo</span>
+            {% else %}
+                <span class="right badge badge-danger">Inactivo</span>
+            {% endif %}
+        </td>
+
+        <td class="text-center">
+            <div class="btn-group btn-group-xs">
+                <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" title="Opciones" aria-expanded="false">
+                    Opciones
+                    <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+{% endfor %}

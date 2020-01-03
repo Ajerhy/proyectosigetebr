@@ -1,0 +1,30 @@
+<form id="cuenta_filter" action="" method="POST">
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="text" class="form-control input-sm" placeholder="Ingrese Cuenta"
+                       name="cuenta" value="{{request.POST.numerocuenta}}">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="text" class="form-control input-sm" placeholder="Ingrese Banco"
+                       name="banco" value="{{request.POST.banco}}">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="text" class="form-control input-sm" placeholder="Ingrese Moneda"
+                       name="moneda" value="{{request.POST.moneda}}">
+            </div>
+        </div>
+
+        <div class="text-center col-lg-2">
+            <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+            <a class="btn btn-default btn-sm clear" href="{% url 'cooperativa:listar_cuenta' %}">Limpiar</a>
+        </div>
+    </div>
+</form>

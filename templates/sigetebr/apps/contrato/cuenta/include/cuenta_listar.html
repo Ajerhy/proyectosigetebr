@@ -1,0 +1,63 @@
+{% for cuentas in list_cuenta %}
+<tr class="h6">
+    <td>{{ forloop.counter}}</td>
+    <td>{{ cuentas.numerocuenta }}</td>
+    <td>{{ cuentas.banco }}</td>
+    <td>{{ cuentas.moneda }}</td>
+
+        <td class="text-center">
+            {% if cuentas.estado %}
+                <span class="right badge badge-success">Activo</span>
+            {% else %}
+                <span class="right badge badge-danger">Inactivo</span>
+            {% endif %}
+        </td>
+
+    <td class="text-center">
+        <div class="btn-group btn-group-xs">
+            <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" title="Opciones" aria-expanded="false">
+                Opciones
+                <span class="caret"></span>
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+
+                <li>
+                    <a href="" onclick="return abrir_modal('{% url 'contrato:detalle_cuenta' cuentas.id %}')" data-toggle="tooltip" data-placement="left" title="Ver Información"><i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i> Ver</a>
+                </li>
+
+                <li>
+                    <!--a href="{% url 'contrato:editar_cuenta' cuentas.id %}" data-toggle="tooltip" data-placement="left" title="Editar"><i class="glyphicon glyphicon-edit"></i> Editar</a-->
+                    <a onclick="window.location.href='{% url 'contrato:editar_cuenta' cuentas.id %}'" role="button" data-toggle="tooltip" data-placement="left" title="Editar"><i class="glyphicon glyphicon-edit"></i> Editar</a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="return abrir_modal('{% url 'contrato:eliminar_cuenta' cuentas.id %}')" data-toggle="tooltip" data-placement="left" title="Eliminar"><i class="glyphicon glyphicon-trash"></i> Eliminar</a>
+                </li>
+
+
+                <li>
+                    <a  {% if cuentas.estado %} onclick="return confirm('¿Estás seguro de que deseas desactivar este Cuenta?')"
+                    {% else %} onclick="return confirm('¿Estás seguro de que quieres activar a este Cuenta?')"
+                    {% endif %} href="{% url 'contrato:estado_cuenta' pk=cuentas.id %}" class="on_off" style="color: #454545; text-decoration: none;">
+                        {% if cuentas.estado == True %}
+                            <i class="fa fa-toggle-off"></i> Desactivar
+                        {% else %}
+                            <i class="fa fa-toggle-on"></i> Activa
+                        {% endif %}
+                        </a>
+                </li>
+
+
+                <li>
+                    {%  if cuentas.estado %}
+                        <a href="#" onclick="return abrir_modal('{% url 'contrato:desactivar_cuenta' cuentas.id %}')" data-toggle="tooltip" data-placement="left" title="Desactivar"><i class="glyphicon glyphicon-eye-close"></i> Desactivar</a>
+                    {% else %}
+                        <a href="#" onclick="return abrir_modal('{% url 'contrato:activar_cuenta' cuentas.id %}')" data-toggle="tooltip" data-placement="left" title="Activar"><i class="glyphicon glyphicon-eye-open"></i> Activar</a>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+    </td>
+</tr>
+{% endfor %}

@@ -1,0 +1,25 @@
+<form id="banco_filter" action="" method="POST">
+    {% csrf_token %}
+    <div class="row">
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="text" class="form-control input-sm" placeholder="Ingrese Banco"
+                       name="banco" value="{{request.POST.nombrebanco}}">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <input type="text" class="form-control input-sm" placeholder="Ingrese Sigla"
+                       name="sigla" value="{{request.POST.siglabanco}}">
+            </div>
+        </div>
+
+        <div class="text-center col-lg-2">
+            <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+            <a class="btn btn-default btn-sm clear" href="{% url 'contrato:listar_banco' %}">Limpiar</a>
+        </div>
+
+    </div>
+</form>

@@ -1,0 +1,32 @@
+{% for clientes in list_cliente %}
+    <tr class="h-6">
+        <td>{{ forloop.counter}}</td>
+        <td>{{ clientes.persona.nombrepersona|default_if_none:"" }} {{ clientes.persona.paternopersona|default_if_none:"" }} {{ clientes.persona.maternopersona|default_if_none:"" }}</td>
+        <td>{{ clientes.persona.cipersona }}</td>
+        <td>{{ clientes.grupo|default_if_none:"" }}</td>
+        <td>{{ clientes.emailcliente|default_if_none:"" }}</td>
+
+
+        <td class="text-center">
+            {% if clientes.estado %}
+                <span class="right badge badge-success">Activo</span>
+            {% else %}
+                <span class="right badge badge-danger">Inactivo</span>
+            {% endif %}
+        </td>
+
+        <td class="text-center">
+            <div class="btn-group btn-group-xs">
+                <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" title="Opciones" aria-expanded="false">
+                    Opciones
+                    <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+{% endfor %}

@@ -1,0 +1,57 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %} Listar Ubicaciones {% endblock title %}
+
+{% block page-title %}
+    <!-- row -->
+    <div class="row mb-1">
+        <div class="col-sm-6">
+            <h5 class="m-0 text-dark">Listar Ubicaciones &nbsp;
+            <a class="btn btn-success" href="{% url 'terreno:crear_ubicacion' %}">
+                    <i class="fas fa-plus"></i> Agregar</a>
+            </h5>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="{% url 'usuario:dashboard' %}">Dasboard</a></li>
+                <li class="breadcrumb-item active"> Ubicaciones </li>
+            </ol>
+        </div><!-- /.col -->
+    </div>
+    <!-- /.row -->
+{% endblock page-title %}
+
+{% block contenido %}
+    <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <!--div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+            </div-->
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                        {% for field in fields %}
+                            <th>{{ field.string }}</th>
+                        {% endfor %}
+                    </tr>
+                  </thead>
+                  <!--tfoot>
+                    <tr>
+                        {% for field in fields %}
+                            <th>{{ field.string }}</th>
+                        {% endfor %}
+                    </tr>
+                  </tfoot-->
+                  <tbody>
+                  {% include 'sigetebr/apps/terreno/ubicacion/include/ubicacion.html' %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+    <!-- DataTales -->
+{% endblock contenido %}
+

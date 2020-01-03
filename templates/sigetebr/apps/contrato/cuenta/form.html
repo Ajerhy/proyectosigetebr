@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    {% if obj_cuenta %} Editar {% else %} Crear {% endif %} Cuenta
+{% endblock title %}
+
+{% block page-title %}
+    <h4 class="pull-left page-title">{% if obj_cuenta %} Editar {% else %} Crear {% endif %} Cuenta</h4>
+
+    <ol class="breadcrumb pull-right">
+        <li class="active"> Cuentas </li>
+        <li class="active"><a href="{% url 'cooperativa:listar_cuenta' %}"> Listar Cuenta </a></li>
+        <li class="active"><a href="{% url 'usuarios:dashboard' %}"><i class="md fa fa-lastfm-square"></i> Inicio </a></li>
+    </ol>
+{% endblock page-title %}

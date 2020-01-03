@@ -1,0 +1,33 @@
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        {% if obj_moneda %}
+            <form method="POST" role="form" class="form-horizontal" action="{% url 'cooperativa:editar_moneda' obj_moneda.pk %}" >
+        {% else %}
+            <form method="POST" role="form" class="form-horizontal" action="{% url 'cooperativa:crear_moneda' %}" >
+        {% endif %}
+
+        {% csrf_token %}
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 class="modal-title" id="myModalLabel">
+                <div class="font-light text-primary text-uppercase">
+                    {% if obj_moneda %} Editar {% else %} Nuevo {% endif %} Moneda
+                </div>
+            </h5>
+        </div>
+
+        <div class="modal-body">
+            {% include 'base/mensaje.html' %}
+            {% include "includes/forms.html" with form=form %}
+            <!--{--{ form.as_p }}-->
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" onclick="return cerrar_modal()" data-dismiss="modal">Cancelar</button>
+            <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-floppy-disk"></span>Guardar</button>
+
+            <!--a href="{-% url 'usuarios:listar_usuario' %}" class="btn btn-success">Cancelara</a-->
+        </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sistema de Gestión de Terrenos Bruno Racua, Urbanizacion.">
+    <meta name="author" content="Ajerhy Inc">
+    <!--title>Sistema de Gestión de Terrenos Bruno Racua</title-->
+    <title>{% block title %}{% endblock title %}</title>
+
+    {% block css %}
+	{% endblock css %}
+
+    {% block csssextras %}
+    {% endblock csssextras %}
+
+</head>
+
+    <body id="page-top" class="bg-gradient-success">
+
+    {% block content %}
+
+    {% endblock content %}
+
+
+
+    {% block control_modal%}
+      <script>
+        function abrir_modal(url)
+        {
+
+          $("#popup").load(url, function(){
+            $(this).modal({
+              backdrop:'static',
+              keyboard: false
+            })
+            $(this).modal('show');
+          });
+          return false;
+        }
+
+        function cerrar_modal()
+        {
+          $('#popup').modal('hide');
+          return false;
+        }
+
+        function mensaje(msg,color='green')
+        {
+          if (color=="success")
+          {
+            color="green";
+          }
+          if (color=="error")
+          {
+            color="red";
+          }
+
+
+          $.alert({
+            title:'',
+            theme:'material',
+            type:color,
+            content:msg
+          });
+        }
+
+        {% if messages %}
+          {% for message in messages %}
+            console.log("{{ message.tags }}");
+            mensaje("{{ message }}","{{ message.tags }}");
+          {% endfor %}
+        {% endif %}
+
+      </script>
+      {% endblock%}
+
+    {% block js %}
+    {% endblock js %}
+
+    {% block jssextras %}
+    {% endblock jssextras%}
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,89 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+
+{% block title %}  {{ user.nombre|default_if_none:"" }} {% endblock title %}
+
+{% block contenido %}
+
+    <div class="col-xl-12 col-lg-12">
+        <div class="card shadow mb-5">
+            <!-- Card Header - Dropdown -->
+            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+
+            <h6 class="m-0 font-weight-bold text-primary">Perfil</h6>
+            <div class="dropdown no-arrow">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Opciones:</div>
+                      <a class="dropdown-item" href="{% url 'usuario:cambiar_password' %}">Cambiar Password</a>
+                      <a class="dropdown-item" href="{% url 'usuario:perfil_actualizar' %}">Editar</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Informacion</a>
+                    </div>
+                  </div>
+
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12">
+
+                      <!-- Main content -->
+                        <section class="invoice">
+                          <!-- title row -->
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <h2 class="page-header">
+                                  <i class="fas fa-user fa-sm fa-fw"></i>
+                                  <strong> Perfil de Usuario </strong>
+                                  <small class="pull-right">
+                                  </small>
+                              </h2>
+                            </div>
+                            <!-- /.col -->
+                          </div>
+
+                          <!-- info row -->
+                          <div class="row invoice-info">
+                              <div class="col-sm-4 col-xs-4 col-md-4 invoice-col">
+                                  {% if not user.perfil.perfil_img %}
+                                      <img src="{% static 'favicon.ico' %}"  alt="Imagen de usuario" height="150" width="150" class="img-profile rounded-circle" />
+                                  {% else %}
+                                      <img src="{{ user.perfil.perfil_img.url }}"  alt="{{ user.perfil.nombre }}" height="150" width="150" class="img-profile rounded-circle" />
+                                  {% endif %}
+                              </div>
+
+                            <div class="col-sm-4 col-xs-4 col-md-4 invoice-col">
+                              Nombre
+                              <address>
+                                <strong>Usuario</strong><br>
+                                Nombre<br>
+                                Email<br>
+                                Telefono<br>
+                              </address>
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-sm-4 col-xs-44 col-md-4 invoice-col">
+                              Informacion
+                              <address>
+                                <strong>{{ user.usuario }}</strong><br>
+                                  {{ user.perfil.nombre|default_if_none:"" }} {{ user.perfil.apellido|default_if_none:"" }}<br>
+                                  {{ user.email }}<br>
+                                  {{ user.perfil.phone|default_if_none:"" }}<br>
+                              </address>
+                            </div>
+                          </div>
+                          <!-- /.row -->
+
+                        </section>
+                      <!-- /.content -->
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock contenido %}

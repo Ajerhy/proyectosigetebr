@@ -1,0 +1,64 @@
+{% for persona in list_persona %}
+    <tr>
+        <td> {{ forloop.counter}} </td>
+        <td> {{ persona.nombrepersona|default_if_none:""}} </td>
+        <td> {{ persona.paternopersona|default_if_none:""}} </td>
+        <td> {{ persona.maternopersona|default_if_none:""}} </td>
+        <td> {{ persona.cipersona}} {{ persona.expedidopersona|default_if_none:"" }}</td>
+        <td class="text-center">
+            {% if persona.generopersona %}
+                <span class="label label-info">Hombre</span>
+            {% else %}
+                <span class="label label-danger">Mujer</span>
+            {% endif %}
+        </td>
+
+        <td class="text-center">
+            {% if persona.estado %}
+                <span class="right badge badge-success">Activo</span>
+            {% else %}
+                <span class="right badge badge-danger">Inactivo</span>
+            {% endif %}
+        </td>
+
+        <td class="text-center">
+
+
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Opciones
+                </button>
+
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+
+                    {%  if persona.estado %}
+                    <a class="dropdown-item" onclick="return abrir_modal('{% url 'contrato:desactivar_persona' persona.id %}')"><i class="fa fa-circle" aria-hidden="true"></i> Desactivar </a>
+                    {% else %}
+                    <a class="dropdown-item" onclick="return abrir_modal('{% url 'contrato:activar_persona' persona.id %}')" ><i class="fa fa-circle-o" aria-hidden="true"></i> Activa </a>
+                    {% endif %}
+
+                    <a class="dropdown-item" href="#">A</a>
+
+                    <a class="dropdown-item" href="#">B</a>
+
+                    <a role="button" class="dropdown-item" {% if persona.estado %} onclick="return confirm('¿Estás seguro de que deseas desactivar este Persona?')"
+                    {% else %} onclick="return confirm('¿Estás seguro de que quieres activar a este Persona?')"
+                    {% endif %}
+                       href="{% url 'contrato:estado_persona' pk=persona.id %}" class="on_off" style="color: #454545; text-decoration: none;">
+                        {% if persona.estado == True %}
+                            <i class="fa fa-toggle-off"></i> Desactivar
+                        {% else %}
+                            <i class="fa fa-toggle-on"></i> Activa
+                        {% endif %}
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        </td>
+    </tr>
+{% endfor %}

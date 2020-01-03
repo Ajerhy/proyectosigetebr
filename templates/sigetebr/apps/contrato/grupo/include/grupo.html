@@ -1,0 +1,27 @@
+{% for grupos in list_grupo %}
+    <tr class="h-6">
+        <td>{{ forloop.counter}}</td>
+        <td>{{ grupos.nombregrupo }}</td>
+        <td class="text-center">
+            {% if grupos.estado %}
+                <span class="right badge badge-success">Activo</span>
+            {% else %}
+                <span class="right badge badge-danger">Inactivo</span>
+            {% endif %}
+        </td>
+
+        <td class="text-center">
+            <div class="btn-group btn-group-xs">
+                <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" title="Opciones" aria-expanded="false">
+                    Opciones
+                    <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+{% endfor %}
