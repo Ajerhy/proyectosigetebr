@@ -1,17 +1,20 @@
 {% for contratos in list_contrato %}
     <tr class="h-6">
-        <td>{{ forloop.counter}}</td>
+        <td>{{ forloop.counter }}</td>
 
-        <td>{{ contratos.cliente }}</td>
+        <td>{{ contratos.cliente.persona.cipersona }}</td>
+
+        <td>{{ contratos.cliente.persona.nombrepersona }}
+            {{ contratos.cliente.persona.paternopersona }}
+            {{ contratos.cliente.persona.maternopersona }}
+        </td>
 
         <td class="text-center">
-
-                {% for Lote in contratos.lotes.all %}
-                    <span class="right badge badge-primary">
+            {% for Lote in contratos.lotes.all %}
+                <span class="right badge badge-primary">
                         {{ Lote.codigolote }} {{ Lote.manzanos.codigomanzano }}
                     </span>
-                {% endfor %}
-
+            {% endfor %}
         </td>
 
         <td>{{ contratos.tipopago|default_if_none:"" }}</td>
@@ -26,7 +29,8 @@
 
         <td class="text-center">
             <div class="btn-group btn-group-xs">
-                <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" title="Opciones" aria-expanded="false">
+                <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" title="Opciones" aria-expanded="false">
                     Opciones
                     <span class="caret"></span>
                 </button>
@@ -57,20 +61,27 @@
 
 
                     <li>
-                        {%  if contratos.estado %}
-                            <a class="dropdown-item" href="" onclick="return abrir_modal('{% url 'terreno:editar_medida' contratos.id %}')" data-toggle="tooltip" data-placement="left" title="Desactivar">
+                        {% if contratos.estado %}
+                            <a class="dropdown-item" href=""
+                               onclick="return abrir_modal('{% url 'terreno:editar_medida' contratos.id %}')"
+                               data-toggle="tooltip" data-placement="left" title="Desactivar">
                                 <i class="fas fa-eye-slash fa-fw mr-2 text-gray-400"></i>
                                 Desactivar</a>
                         {% else %}
-                            <a class="dropdown-item" href="" onclick="return abrir_modal('{% url 'terreno:editar_medida' contratos.id %}')" data-toggle="tooltip" data-placement="left" title="Activar"><i class="fas fa-eye fa-fw mr-2 text-gray-400"></i> Activar</a>
+                            <a class="dropdown-item" href=""
+                               onclick="return abrir_modal('{% url 'terreno:editar_medida' contratos.id %}')"
+                               data-toggle="tooltip" data-placement="left" title="Activar"><i
+                                    class="fas fa-eye fa-fw mr-2 text-gray-400"></i> Activar</a>
                         {% endif %}
                     </li>
 
                     <li>
-                        <a class="dropdown-item" {% if contratos.estado %} onclick="return confirm('¿Estás seguro de que deseas desactivar este Medida?')"
+                        <a class="dropdown-item" {% if contratos.estado %}
+                           onclick="return confirm('¿Estás seguro de que deseas desactivar este Medida?')"
                         {% else %} onclick="return confirm('¿Estás seguro de que quieres activar a este Medida?')"
                         {% endif %}
-                           href="{% url 'terreno:estado_medida' pk=contratos.id %}" class="on_off" style="color: #454545; text-decoration: none;">
+                           href="{% url 'terreno:estado_medida' pk=contratos.id %}" class="on_off"
+                           style="color: #454545; text-decoration: none;">
                             {% if contratos.estado %}
                                 <i class="fas fa-toggle-off fa-fw mr-2 text-gray-400"></i>
                                 Desactivar

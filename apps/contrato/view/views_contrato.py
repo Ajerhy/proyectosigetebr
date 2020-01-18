@@ -21,6 +21,7 @@ def manual(request):
 
 CONTRATO_FIELDS = [
     {'string': 'N°'},
+    {'string': 'Documento'},
     {'string': 'Cliente'},
     {'string': 'Lotes - Manzano'},
     {'string': 'Tipo Pago'},

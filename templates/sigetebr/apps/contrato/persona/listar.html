@@ -7,17 +7,18 @@
     <!-- row -->
     <div class="row mb-1">
         <div class="col-sm-6">
-            <h5 class="m-0 text-dark">Listar Personas &nbsp;
-            <a class="btn btn-success" href="{% url 'contrato:listar_persona' %}">
+            <h5 class="m-0 text-dark">
+                Listar Personas &nbsp;
+                <a class="btn btn-success" href="{% url 'contrato:crear_persona' %}">
                     <i class="fas fa-plus"></i> Agregar</a>
             </h5>
-        </div><!-- /.col -->
+        </div>
         <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="{% url 'usuario:dashboard' %}">Dasboard</a></li>
-                <li class="breadcrumb-item active"> Personas </li>
+                <li class="breadcrumb-item"><a href="{% url 'usuario:dashboard' %}">Dasboard</a></li>
+                <li class="breadcrumb-item active"> Personas</li>
             </ol>
-        </div><!-- /.col -->
+        </div>
     </div>
     <!-- /.row -->
 {% endblock page-title %}
@@ -54,3 +55,5 @@
           </div>
     <!-- DataTales -->
 {% endblock contenido %}
+    {% block jssextras %}
+    {% endblock jssextras%}

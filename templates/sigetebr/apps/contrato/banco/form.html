@@ -6,11 +6,9 @@
 {% endblock title %}
 
 {% block page-title %}
-    <h4 class="pull-left page-title">{% if obj_banco %} Editar {% else %} Crear {% endif %} Banco</h4>
-
-    <ol class="breadcrumb pull-right">
-        <li class="active"> Bancos </li>
-        <li class="active"><a href="{% url 'cooperativa:listar_banco' %}"> Listar Banco </a></li>
-        <li class="active"><a href="{% url 'usuarios:dashboard' %}"><i class="md fa fa-lastfm-square"></i> Inicio </a></li>
-    </ol>
+    <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-4">
+        <h1 class="h3 mb-0 text-gray-800">Add Banco</h1>
+        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+    </div>
 {% endblock page-title %}

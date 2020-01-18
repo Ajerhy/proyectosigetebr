@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="390ece3e-b438-4c00-9e2b-4718f75fb571" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="390ece3e-b438-4c00-9e2b-4718f75fb571" name="Default Changelist" comment="Red">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/contrato/form/forms_grupo.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/contrato/form/forms_grupo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/contrato/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/contrato/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/contrato/view/views_contrato.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/contrato/view/views_contrato.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/media/1569255336/A.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/static/base_dasboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/static/base_dasboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/banco/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cliente/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cliente/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cliente/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cliente/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/contrato/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/contrato/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/contrato/include/contrato.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/contrato/include/contrato.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cuenta/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/cuenta/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/grupo/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/grupo/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/grupo/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/grupo/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/moneda/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/movil/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/movil/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/movil/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/movil/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/persona/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/persona/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/persona/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/persona/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/urbanizacion/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/urbanizacion/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/urbanizacion/listar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/urbanizacion/listar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/medida/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/terreno/medida/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/perfil/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/perfil/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/usuario/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/usuario/form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +43,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Vr0Iyt4dDx0nEEa5dzoyVxknoK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,11 +54,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/sigetebr/apps/terreno/ubicacion" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hp\PycharmProjects\proyectosigetebr\templates\sigetebr\apps\terreno\ubicacion" />
+      <recent name="C:\Users\Hp\PycharmProjects\proyectosigetebr\templates\sigetebr\apps\terreno\distrito" />
+      <recent name="C:\Users\Hp\PycharmProjects\proyectosigetebr\templates\sigetebr\apps\terreno\lote" />
+      <recent name="C:\Users\Hp\PycharmProjects\proyectosigetebr\templates\sigetebr\apps\terreno\manzano" />
       <recent name="C:\Users\Hp\PycharmProjects\proyectosigetebr" />
     </key>
   </component>
@@ -82,7 +115,10 @@
       <updated>1577995830873</updated>
       <workItem from="1577995916007" duration="414000" />
       <workItem from="1578015399650" duration="2278000" />
-      <workItem from="1578018173499" duration="1033000" />
+      <workItem from="1578018173499" duration="1850000" />
+      <workItem from="1578020099043" duration="1764000" />
+      <workItem from="1578584553669" duration="264000" />
+      <workItem from="1579328073587" duration="10579000" />
     </task>
     <servers />
   </component>
@@ -90,17 +126,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="642" y="0" key="CommitChangelistDialog2" timestamp="1578019300258">
+    <state x="642" y="0" key="CommitChangelistDialog2" timestamp="1579338731764">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="642" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578019300258" />
-    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1578015769822">
+    <state x="642" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1579338731764" />
+    <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1579330050374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578015769822" />
-    <state x="186" y="9" key="SettingsEditor" timestamp="1578018944586">
+    <state x="463" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579330050374" />
+    <state x="186" y="9" key="SettingsEditor" timestamp="1578584673098">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578018944586" />
+    <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578584673098" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1578020098494">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1578020098494" />
   </component>
 </project>

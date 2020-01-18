@@ -33,7 +33,7 @@ from apps.contrato.view.views_moneda import MonedaListarView,MonedaCrearView,Mon
     MonedaEliminarView,monedaactivar,monedadesactivar,cambiar_estado_moneda
 
 #Urbanizacion
-from apps.contrato.view.views_urbanizacion import UrbanizacionListarView
+from apps.contrato.view.views_urbanizacion import UrbanizacionListarView,UrbanizacionCrearView
 
 #Notaria
 from apps.contrato.view.views_notaria import NotariaListarView,NotariaCrearView,NotariaEditarView,NotariaDetalleView,\
@@ -187,6 +187,7 @@ urlpatterns = [
 
     #Urbanizacion
     path('urbanizacion/', UrbanizacionListarView.as_view(), name='listar_urbanizacion'),
+    path('crear/urbanizacion/', UrbanizacionCrearView.as_view(), name='crear_urbanizacion'),
 
 #    path('perfil/<slug:usuario_url>/usuario/', UsuarioPerfilDetalleView.as_view(), name='perfil_usuario'),
 ]
