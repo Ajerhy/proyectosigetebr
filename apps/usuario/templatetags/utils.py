@@ -470,6 +470,12 @@ CODIGO_MONEDA= (("AED", _("AED, Dirham")),
     ("ZMK", _("ZMK, Kwacha")),
     ("ZWL", _("ZWL, Dolar")),)
 
+PROPIETARIO = (
+    ("P", "Primario"),
+    ("R", "Respresentante"),
+    ("D", "Delegado"),
+)
+
 """
         def get_ip(request):
             x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')

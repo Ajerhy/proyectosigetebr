@@ -43,7 +43,7 @@ class Distrito(EstadoModel):
                                               help_text = 'Ingrese el Numero del Distrito')
     nombredistrito = models.CharField(max_length=50, blank=True, null=True,
                                               verbose_name = 'Nombre Distrito',
-                                              help_text = 'Ingrese del Nombre Distrito')
+                                              help_text = 'Ingrese Nombre del Distrito')
     sigladistrito = models.CharField(max_length=10, blank=True, null=True,
                                               verbose_name = 'Sigla del Distrito',
                                               help_text = 'Ingrese la Sigla del Distrito')
@@ -98,7 +98,6 @@ class Lote(EstadoModel):
     procesolote = models.CharField(max_length=20,choices=PROCESO,
                                         verbose_name='Proceso',
                                         help_text = 'Ingrese Proceso Lote')
-
     medidas = models.ForeignKey(Medida, null=True, blank=True, on_delete=models.CASCADE)
 
     ubicaciones = models.ForeignKey(Ubicacion, null=True, blank=True, on_delete=models.CASCADE)

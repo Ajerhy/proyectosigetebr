@@ -3,7 +3,7 @@ from apps.usuario.models import EstadoModel
 from django.core.validators import RegexValidator
 from apps.terreno.models import Lote
 from apps.terreno.models import Ubicacion
-from apps.usuario.templatetags.utils import SEXOS,EXPEDIDOS,TIPOPAGO
+from apps.usuario.templatetags.utils import SEXOS,EXPEDIDOS,TIPOPAGO,PROPIETARIO
 
 class Persona(EstadoModel):
     nombrepersona = models.CharField(max_length=100, blank=True, null=True,verbose_name='Nombre',
@@ -119,7 +119,6 @@ class Cuenta(EstadoModel):
         verbose_name_plural = "Cuenta"
         ordering = ['-creacion']
 
-
 class Notaria(EstadoModel):
     numeronotario = models.CharField(max_length=60, blank=False, null=False, unique=True,
                                     verbose_name='Numero de Notaria',
@@ -133,7 +132,6 @@ class Notaria(EstadoModel):
         verbose_name_plural = "Notaria de Fe Publica"
         ordering = ['creacion']
 
-
 class Propietaria(EstadoModel):
     #representante
     #apoderado
@@ -141,6 +139,9 @@ class Propietaria(EstadoModel):
     actividad = models.CharField(max_length=50, blank=True, null=True,
                                          verbose_name='Nombre Actividad',
                                          help_text='Ingrese del Nombre Actividad')
+    tipo = models.CharField(max_length=20,choices=PROPIETARIO,blank=True,
+                                        verbose_name='Tipo Propietario',
+                                        help_text = 'Propietario')
 
 #    copropietaria = models.ForeignKey('self', verbose_name=(u"Propietaria"),
 #                                   help_text='Ingrese Propietaria',

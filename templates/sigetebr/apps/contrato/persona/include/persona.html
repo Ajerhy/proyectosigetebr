@@ -1,10 +1,10 @@
 {% for persona in list_persona %}
     <tr>
         <td> {{ forloop.counter}} </td>
-        <td> {{ persona.nombrepersona|default_if_none:""}} </td>
-        <td> {{ persona.paternopersona|default_if_none:""}} </td>
-        <td> {{ persona.maternopersona|default_if_none:""}} </td>
-        <td> {{ persona.cipersona}} {{ persona.expedidopersona|default_if_none:"" }}</td>
+        <td class="text-uppercase"> {{ persona.nombrepersona|default_if_none:""}} </td>
+        <td class="text-uppercase"> {{ persona.paternopersona|default_if_none:""}} </td>
+        <td class="text-uppercase"> {{ persona.maternopersona|default_if_none:""}} </td>
+        <td class="text-uppercase"> {{ persona.cipersona}} {{ persona.expedidopersona|default_if_none:"" }}</td>
         <td class="text-center">
             {% if persona.generopersona %}
                 <span class="label label-info">Hombre</span>

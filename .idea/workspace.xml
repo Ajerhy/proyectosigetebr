@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="390ece3e-b438-4c00-9e2b-4718f75fb571" name="Default Changelist" comment="Red">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/contrato/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/contrato/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/terreno/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/terreno/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/usuario/templatetags/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/usuario/templatetags/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/persona/include/persona.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/contrato/persona/include/persona.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/configuracion/perfil_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sigetebr/apps/usuario/configuracion/perfil_password.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/sigetebr/apps/terreno/ubicacion" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -97,6 +98,8 @@
       <workItem from="1578584553669" duration="264000" />
       <workItem from="1579328073587" duration="10579000" />
       <workItem from="1579367486662" duration="2676000" />
+      <workItem from="1579389493358" duration="3814000" />
+      <workItem from="1579415563430" duration="2900000" />
     </task>
     <servers />
   </component>
@@ -116,9 +119,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578584673098" />
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1579367600673">
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1579389578418">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579367600673" />
+    <state x="391" y="191" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579389578418" />
   </component>
 </project>
